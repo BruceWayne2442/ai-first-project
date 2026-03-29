@@ -1,0 +1,128 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 100%;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: clamp(2rem, 6vw, 4rem);
+  font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto,
+    Helvetica, Arial, sans-serif;
+  line-height: 1.65;
+  color: #c4c4cc;
+  background: #0a0a0b;
+}
+
+.page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 32rem;
+  text-align: center;
+  gap: 1.75rem;
+}
+
+.title {
+  margin: 0;
+  font-size: clamp(1.75rem, 4.5vw, 2.25rem);
+  font-weight: 500;
+  letter-spacing: -0.03em;
+  line-height: 1.2;
+  color: #f0f0f3;
+}
+
+.intro {
+  margin: 0;
+  max-width: 26rem;
+  font-size: 1rem;
+  line-height: 1.7;
+  color: #8b8b96;
+}
+
+.projects {
+  width: 100%;
+  margin: 0.25rem 0 0;
+  padding-top: 1.5rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  text-align: left;
+}
+
+.projects-heading {
+  margin: 0 0 1.25rem;
+  font-size: 0.6875rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  text-align: center;
+  color: #6e6e78;
+}
+
+.project-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.project {
+  margin: 0;
+}
+
+.project-title {
+  margin: 0 0 0.35rem;
+  font-size: 0.9375rem;
+  font-weight: 500;
+  letter-spacing: -0.01em;
+  color: #e2e2e8;
+}
+
+.project-desc {
+  margin: 0;
+  font-size: 0.875rem;
+  line-height: 1.6;
+  color: #8b8b96;
+}
+
+.contact-btn {
+  margin-top: 0.5rem;
+  display: inline-block;
+  padding: 0.625rem 1.5rem;
+  font-size: 0.8125rem;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #e6e6ea;
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 0.25rem;
+  box-shadow: none;
+  transition: border-color 0.2s ease, color 0.2s ease,
+    background-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.contact-btn:hover {
+  border-color: rgba(255, 255, 255, 0.45);
+  color: #fff;
+  background-color: rgba(255, 255, 255, 0.05);
+  box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.12),
+    0 0 24px rgba(255, 255, 255, 0.18), 0 0 48px rgba(180, 200, 255, 0.12);
+}
+
+.contact-btn:active {
+  background-color: rgba(255, 255, 255, 0.06);
+  box-shadow: 0 0 16px rgba(255, 255, 255, 0.12);
+}
